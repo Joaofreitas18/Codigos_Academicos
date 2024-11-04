@@ -1,0 +1,118 @@
+* {   
+    margin: 0;          /* O * serve pra zerar a pagina, o layout*/ 
+    padding: 0;             
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: url("https://picsum.photos/1600/900?random=1");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;  /*  Vai ocupar a tela toda em 100 pedacinhos*/ 
+    display: flex;
+    align-items: center; /*  Vai alinhar ao centro tanto na horizontal quanto a vertical*/ 
+    justify-content: center;
+}
+
+.container {
+
+    width: 420;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(12px);
+    border-radius: 10px ; /*  Deixar a borda arredondada*/ 
+    padding: 30px 15px;  /*  Esse é um atalho que 30px vai ser aplicado enxima e embaixo e 40px esquerda e direita */ 
+}
+
+h1 {
+
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
+}
+
+.input-container input {
+    width: 100%;
+    height: 100;
+    background: transparent;
+    border: none; /* none é para nao ter borda*/ 
+    outline: none; /* Linha que fica dentro da caixa */ 
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 15px 15px 20px;
+}
+
+.input-container input::placeholder {   /* o que estiver dentro do campo do conteiner no caso email. */ 
+   color: #fff; 
+} 
+
+.input-container img {
+    position: absolute;
+    right: 24px;
+    top: 31%;
+    margin-top: 5px;
+}
+
+.input-container a {
+
+    font-size: 13px;
+    margin-top: 5px;
+    color:#fff;
+    text-decoration: none;
+}
+
+.input-container a:hover {  /* Hover é um estilo que so vai aplicar quando o mouse estiver encima */ 
+    text-decoration: underline;
+
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #558cdd;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 24px;
+    cursor: pointer;   /*pointer é usada para por a maozinha quando passar por cima com o mouse */ 
+    outline: none;
+    font-size: 16px;
+} 
+
+.submit-button:hover {
+    background-color: #5b86c5;
+}
+
+.register-link p  {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300; /*pra letra ficar um pouco mais grossa */
+}
+
+
+.register-link{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.register-link p a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700; /*pra letra ficar um pouco mais grossa */
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
