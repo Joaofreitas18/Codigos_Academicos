@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("https://picsum.photos/1600/900?random=1");
+    background: url("img3.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;  /*  Vai ocupar a tela toda em 100 pedacinhos*/ 
@@ -17,7 +17,7 @@ body {
 
 .container {
 
-    width: 420;
+    width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(12px);
@@ -41,7 +41,7 @@ h1 {
 
 .input-container input {
     width: 100%;
-    height: 100;
+    height: 115%;
     background: transparent;
     border: none; /* none é para nao ter borda*/ 
     outline: none; /* Linha que fica dentro da caixa */ 
@@ -65,8 +65,8 @@ h1 {
 
 .input-container a {
 
-    font-size: 13px;
-    margin-top: 5px;
+    font-size: 12px;
+    margin-top:10px;
     color:#fff;
     text-decoration: none;
 }
@@ -79,11 +79,11 @@ h1 {
 .submit-button {
     width: 100%;
     height: 50px;
-    background-color: #558cdd;
+    background-color: #4172bb;
     border: none;
     border-radius: 10px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 700;  /* Aplica o estilo negrito ao texto dentro do elemento */
     margin-top: 24px;
     cursor: pointer;   /*pointer é usada para por a maozinha quando passar por cima com o mouse */ 
     outline: none;
