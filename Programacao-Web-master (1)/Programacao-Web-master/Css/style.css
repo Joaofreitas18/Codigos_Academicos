@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Reset básico e configuração da fonte */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilo do body com imagem de fundo */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://github.com/Joaofreitas18/Codigos_Academicos/blob/main/U_Desafio_outra_4/6a11401925083aa82b0f966846811632.jpg?raw=true') no-repeat center center fixed;
+    background-size: cover;
+    padding: 1rem;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    width: 70%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column; /* Direção em coluna */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 2rem; /* Espaçamento interno */
+}
+
+/* Estilo do cabeçalho do formulário */
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.6rem 1.5rem; /* Padding consistente */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Estilo do grupo de inputs */
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    width: 48%; /* Espaçamento entre inputs */
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+/* Estilo do grupo de gênero */
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+    width: 100%;
+}
+
+/* Estilo do botão continuar */
+.continue-button {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+}
+
+.continue-button button {
+    width: 50%; /* Largura do botão */
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.8rem; /* Padding consistente */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    display: block; /* Garante que o link ocupe toda a área do botão */
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        padding-right: 1rem;
+        overflow-y: auto;
+    }
+    .input-box {
+        width: 100%;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+}
