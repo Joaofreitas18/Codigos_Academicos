@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-texto: #333333;      /* Cor do texto */
+    --fonte-titulo: 'Inter';
+    --fonte-sub-titulo: 'Roboto';
+    --fonte-texto: 'lato';
+}
 
 * {   
     margin: 0;          /* O * serve pra zerar a pagina, o layout*/ 
@@ -11,10 +20,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;   /*Meio que é o minimo de altura que le vai ter é 100vh ou seja a tela toda*/ 
-    background: url('/U_Desafio_outra_4/6a11401925083aa82b0f966846811632.jpg');
-    background-size: cover;
-    background-position: center();
+    min-height: 100vh;   /*Meio que é o minimo de altura que le vai ter é 100vh no caso toda a tela*/ 
+    background: url('./6a11401925083aa82b0f966846811632.jpg');
+    background-size: cover; /* size serve pra esticar a tela toda*/
+    background-position: center;
 }
 
 .container {
@@ -22,13 +31,13 @@ body{
     background-color: transparent;
     border: 2px solid rgba(255,255,255, .2);
     border-radius: 10px;
-    color: #fff;
+    color: #f2f2f2;
     padding: 30px 40px;
     box-shadow: 0 0 10px rgba(0,0,0, .2);
     backdrop-filter: blur(50px);
 }
 
-.conteiner h1{
+.container h1 {
     font-size: 36px;
     text-align: center;  /*Alinhar ao centro da tela*/ 
 }
@@ -37,16 +46,16 @@ body{
     position: relative;
     width: 100%;
     height: 50px;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
-.input-box input {
+.input-box input { 
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: transparent; /* com o color transparent, podemos fazer alguns efeitos por isso a escolha dele*/
     border: 2px solid rgba(255,255,255, .2);
     border-radius: 40px;
-    outline: none;
+    outline: none; /*Tirei outline porque acho horrivel aquela linha dentro da caixa*/
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
@@ -56,10 +65,10 @@ body{
     color: #fff;
 }
 
-.input-box i {
+.input-box i { /* Vai fazer alteração no icone*/
     position: absolute;
     right: 20px;
-    top: 25%;
+    top: 26%;
     font-size: 20px;
 }
 
