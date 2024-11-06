@@ -49,11 +49,6 @@ body{
     backdrop-filter: blur(50px);
 }
 
-.container h1 {
-    font-size: 36px;
-    text-align: center;  /*Alinhar ao centro da tela*/ 
-}
-
 .input-box {
     position: relative;
     width: 100%;
