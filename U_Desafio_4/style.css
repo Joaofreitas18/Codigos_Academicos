@@ -9,7 +9,7 @@ body {
     background: url("img3.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;  /*  Vai ocupar a tela toda em 100 pedacinhos*/ 
+    min-height: 100vh;  /*  Vai ocupar a tela toda, tipo em 100 pedacinhos*/ 
     display: flex;
     align-items: center; /*  Vai alinhar ao centro tanto na horizontal quanto a vertical*/ 
     justify-content: center;
@@ -50,6 +50,8 @@ h1 {
     font-size: 16px;
     color: #fff;
     padding: 20px 15px 15px 20px;
+    margin-bottom: 10px;
+
 }
 
 .input-container input::placeholder {   /* o que estiver dentro do campo do conteiner no caso email. */ 

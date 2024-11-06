@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;   /*Meio que é o minimo de altura que le vai ter é 100vh ou seja a tela toda*/ 
-    background: url('./img.jpg');
+    background: url('/U_Desafio_outra_4/6a11401925083aa82b0f966846811632.jpg');
     background-size: cover;
     background-position: center();
 }
