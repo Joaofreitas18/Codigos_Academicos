@@ -20,6 +20,14 @@ fieldset {
     border: none;
 }
 
+legend {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-family: var(--fonte-titulo);
+}
+
 body{
     display: flex;
     justify-content: center;
