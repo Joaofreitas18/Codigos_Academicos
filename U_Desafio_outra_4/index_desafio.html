@@ -12,33 +12,32 @@
         <form>
             <h1>Login</h1>
 
-            <div class="input-box">
-              <input placeholder="Usuário" type="email">
-              <i class="bx bxs-user"></i> <!--Essa é a classe referente ao icone de usuario-->
-            </div>
+            <fieldset class="input-box">  
+              <input placeholder="Usuário" type="email" required>  
+              <i class="bx bxs-user"></i> <!--Essa é a classe referente ao ícone de usuário-->  
+            </fieldset>  
 
-            <div class="input-box">
-              <input placeholder="Senha" type="password">
-              <i class="bx bxs-lock-alt"></i> <!--Essa é a classe referente ao icone de trancado-->
-            </div>
+            <fieldset class="input-box">  
+              <input placeholder="Senha" type="password" required>  
+              <i class="bx bxs-lock-alt"></i> <!--Essa é a classe referente ao ícone de trancado-->  
+            </fieldset>  
 
-            <div class="remember-forgot">  
+
+            <section class="remember-forgot">  
                 <label>  
                     <input type="checkbox">  
-                      Lembrar senha  
+                    Lembrar senha  
                 </label>  
                 <a href="#">Esqueci a senha</a>  
-            </div>  
+            </section> 
 
             <button type="submit" class="login">Login</button>
 
-            <div class="register-link">
-                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-            </div>
+            <section class="register-link">  
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>  
+            </section> 
 
        </form>
     </main>
-
-
 </body>
 </html>
